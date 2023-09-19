@@ -3,14 +3,14 @@ package classes;
 public class FuncionarioAssalariado extends Funcionario{
     private double salarioSemanal = 700.00;
 
-    public FuncionarioAssalariado(String nome, String CPF, double salario) {
-        this.salarioSemanal = salario;
+    public FuncionarioAssalariado(String nome, String CPF, double salarioSemanal) {
+        this.salarioSemanal = salarioSemanal;
         this.nome = nome;
         this.CPF = CPF;
     }
 
     public double getSalarioSemanal() {
-        return salarioSemanal *4;
+        return salarioSemanal;
     }
 
     public void setSalarioSemanal(double salarioSemanal) {
@@ -19,6 +19,6 @@ public class FuncionarioAssalariado extends Funcionario{
 
     @Override
     public double getRendimentos() {
-        return salarioSemanal;
+        return salarioSemanal*4;
     }
 }

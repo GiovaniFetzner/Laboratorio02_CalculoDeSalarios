@@ -1,22 +1,34 @@
 package testes;
 
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+import classes.FuncionarioAssalariado;
+import classes.FuncionarioComissionado;
+import classes.FuncionarioComissionadoBaseSalario;
+import classes.FuncionarioHorista;
+
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        FuncionarioComissionadoBaseSalario funcionarioComissionadoBaseSalarioComissionadoBaseSalario = new
+                FuncionarioComissionadoBaseSalario("João","123456789",20.00,10000.00);
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+        System.out.println("Rendimentos do funcionario comissionado e com salário: " +
+                funcionarioComissionadoBaseSalarioComissionadoBaseSalario.getRendimentos());
 
-        //pescador
+        FuncionarioComissionado funcionarioComissionado = new FuncionarioComissionado("Jorge",
+                "12345654321",50.00,5000.00);
+
+        System.out.println("Rendimentos do funcionario comissionado e sem salário: " +
+                funcionarioComissionado.getRendimentos());
+
+        FuncionarioHorista funcionarioHorista = new FuncionarioHorista("Irineu", "0987654321", 20.00, 45);
+
+        System.out.println("Rendimentos do funcionario horista: " + funcionarioHorista.getRendimentos());
+
+        FuncionarioAssalariado funcionarioAssalariado = new FuncionarioAssalariado("Batista", "6789054321",
+                500.00);
+
+        System.out.println("Rendimentos do funcionario assalariado: " + funcionarioAssalariado.getRendimentos());
+
 
     }
 }
