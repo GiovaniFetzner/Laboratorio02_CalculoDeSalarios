@@ -8,8 +8,16 @@ public class FuncionarioComissionadoBaseSalario extends FuncionarioComissionado{
         super(nome, CPF, taxaComissao, vendasBrutas);
     }
 
+    public double getSalario() {
+        return salario;
+    }
+
+    public void setSalario(double salario) {
+        this.salario = salario;
+    }
+
     @Override
     public double getRendimentos() {
-        return super.getRendimentos();
+        return salario+(super.getTaxaComissao()*super.getVendasBrutas());
     }
 }

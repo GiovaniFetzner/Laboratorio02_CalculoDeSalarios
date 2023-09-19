@@ -8,7 +8,7 @@ public class FuncionarioComissionado extends Funcionario{
                                    double taxaComissao, double vendasBrutas) {
         this.nome = nome;
         this.CPF = CPF;
-        this.taxaComissao = taxaComissao;
+        this.taxaComissao = (1+(taxaComissao/100));
         this.vendasBrutas = vendasBrutas;
     }
 
@@ -30,6 +30,6 @@ public class FuncionarioComissionado extends Funcionario{
 
     @Override
     public double getRendimentos() {
-        return 0;
+        return (getTaxaComissao()*vendasBrutas);
     }
 }
