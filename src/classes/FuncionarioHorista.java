@@ -1,24 +1,48 @@
 package classes;
 
 public class FuncionarioHorista extends Funcionario{
-    private double salario;
+    private double salarioPorHora;
 
-    public FuncionarioHorista(String nome, String CPF, double salario) {
+    private int horasTrabalhadasNaSemana;
+
+    public FuncionarioHorista(String nome, String CPF, double salario, int horasTrabalhadas) {
         this.nome = nome;
         this.CPF = CPF;
-        this.salario = salario;
+        this.salarioPorHora = salario;
+        this.horasTrabalhadasNaSemana = horasTrabalhadas;
     }
 
-    public double getSalario(int horasTrabalhadas) {
-        return salario;
-    }
-
-    public void setSalario(double salario) {
-        this.salario = salario;
-    }
+/*    public double getSalario(int horasTrabalhadasNaSemana) {
+        if(horasTrabalhadasNaSemana<40){
+            return salarioPorHora * horasTrabalhadasNaSemana;
+        } else{
+            return (40*salarioPorHora)+((horasTrabalhadasNaSemana-40)*1.5) ;
+        }
+    }*/
 
     @Override
     public double getRendimentos() {
-        return 0;
+        if(horasTrabalhadasNaSemana <40){
+            return salarioPorHora * horasTrabalhadasNaSemana;
+        } else{
+         return (40*salarioPorHora)+((horasTrabalhadasNaSemana -40)*1.5) ;
+        }
     }
+
+    public int getHorasTrabalhadasNaSemana() {
+        return horasTrabalhadasNaSemana;
+    }
+
+    public void setHorasTrabalhadasNaSemana(int horasTrabalhadasNaSemana) {
+        this.horasTrabalhadasNaSemana = horasTrabalhadasNaSemana;
+    }
+
+    public double getSalarioPorHora() {
+        return salarioPorHora;
+    }
+
+    public void setSalarioPorHora(double salarioPorHora) {
+        this.salarioPorHora = salarioPorHora;
+    }
+
 }
