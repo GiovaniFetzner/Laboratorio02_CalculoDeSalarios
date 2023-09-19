@@ -12,6 +12,22 @@ public class FuncionarioComissionado extends Funcionario{
         this.vendasBrutas = vendasBrutas;
     }
 
+    public double getTaxaComissao() {
+        return taxaComissao;
+    }
+
+    public void setTaxaComissao(double taxaComissao) {
+        this.taxaComissao = taxaComissao;
+    }
+
+    public double getVendasBrutas() {
+        return vendasBrutas;
+    }
+
+    public void setVendasBrutas(double vendasBrutas) {
+        this.vendasBrutas = vendasBrutas;
+    }
+
     @Override
     public double getRendimentos() {
         return 0;
