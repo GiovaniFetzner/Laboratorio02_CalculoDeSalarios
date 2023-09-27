@@ -4,9 +4,9 @@ public class FuncionarioAssalariado extends Funcionario{
     private double salarioSemanal = 700.00;
 
     public FuncionarioAssalariado(String nome, String CPF, double salarioSemanal) {
+        setNome(nome);
+        setCPF(CPF);
         this.salarioSemanal = salarioSemanal;
-        this.nome = nome;
-        this.CPF = CPF;
     }
 
     public double getSalarioSemanal() {

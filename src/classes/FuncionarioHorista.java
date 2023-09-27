@@ -12,14 +12,6 @@ public class FuncionarioHorista extends Funcionario{
         this.horasTrabalhadasNaSemana = horasTrabalhadas;
     }
 
-/*    public double getSalario(int horasTrabalhadasNaSemana) {
-        if(horasTrabalhadasNaSemana<40){
-            return salarioPorHora * horasTrabalhadasNaSemana;
-        } else{
-            return (40*salarioPorHora)+((horasTrabalhadasNaSemana-40)*1.5) ;
-        }
-    }*/
-
     @Override
     public double getRendimentos() {
         if(horasTrabalhadasNaSemana <40){
