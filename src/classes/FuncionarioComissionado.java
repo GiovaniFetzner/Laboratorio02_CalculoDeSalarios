@@ -5,10 +5,10 @@ public class FuncionarioComissionado extends Funcionario{
     private double taxaComissao, vendasBrutas;
 
     public FuncionarioComissionado(String nome, String CPF,
-                                   double taxaComissao, double vendasBrutas) {
+                                   double taxaComissao, double vendasBrutas, String tipo) {
         setNome(nome);
         setCPF(CPF);
-        this.CPF = CPF;
+        setTipo(tipo);
         this.taxaComissao = (1+(taxaComissao/100));
         this.vendasBrutas = vendasBrutas;
     }

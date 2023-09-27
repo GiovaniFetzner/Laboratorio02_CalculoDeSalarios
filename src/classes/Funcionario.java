@@ -3,8 +3,15 @@ package classes;
 public abstract class Funcionario {
     public String nome, CPF;
     public double rendimentos;
+    public String tipo;
 
+    public String getTipo() {
+        return tipo;
+    }
 
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
 
     public abstract double getRendimentos();
 

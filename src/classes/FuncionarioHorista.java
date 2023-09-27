@@ -5,9 +5,10 @@ public class FuncionarioHorista extends Funcionario{
 
     private int horasTrabalhadasNaSemana;
 
-    public FuncionarioHorista(String nome, String CPF, double salario, int horasTrabalhadas) {
-        this.nome = nome;
-        this.CPF = CPF;
+    public FuncionarioHorista(String nome, String CPF, double salario, int horasTrabalhadas, String tipo) {
+        setNome(nome);
+        setCPF(CPF);
+        setTipo(tipo);
         this.salarioPorHora = salario;
         this.horasTrabalhadasNaSemana = horasTrabalhadas;
     }
