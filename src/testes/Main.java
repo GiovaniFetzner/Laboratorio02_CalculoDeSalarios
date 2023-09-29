@@ -17,7 +17,7 @@ public class Main {
 
 
         FuncionarioAssalariado Assalariado = new FuncionarioAssalariado("Batista", "6789054321",
-                500.00, "Assalariado");
+                500.00, "Assalariado.4");
 
 
         ContaRendimento cr = new ContaRendimento();
