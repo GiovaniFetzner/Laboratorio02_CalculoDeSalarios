@@ -6,6 +6,7 @@ public class FuncionarioComissionadoBaseSalario extends FuncionarioComissionado{
 
     public FuncionarioComissionadoBaseSalario(String nome, String CPF, double taxaComissao, double vendasBrutas, String tipo) {
         super(nome, CPF, taxaComissao, vendasBrutas, tipo);
+        setTipoClasse(TipodeFuncionario.COMISSIONADOBASESALARIO);
     }
 
     public double getSalario() {

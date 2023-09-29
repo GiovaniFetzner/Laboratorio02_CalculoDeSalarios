@@ -11,7 +11,7 @@ public class FuncionarioComissionado extends Funcionario{
         setTipo(tipo);
         this.taxaComissao = (1+(taxaComissao/100));
         this.vendasBrutas = vendasBrutas;
-        setFf(TipodeFuncionario.COMISSIONADO);
+        setTipoClasse(TipodeFuncionario.COMISSIONADO);
     }
 
     public double getTaxaComissao() {

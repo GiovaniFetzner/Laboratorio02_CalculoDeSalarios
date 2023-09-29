@@ -17,7 +17,7 @@ public class Main {
 
 
         FuncionarioAssalariado Assalariado = new FuncionarioAssalariado("Batista", "6789054321",
-                500.00, "Assalariado.4");
+                500.00, "Assalariado");
 
 
         ContaRendimento cr = new ContaRendimento();
@@ -87,7 +87,7 @@ public class Main {
     private static void MostraFuncionarioCm (Funcionario[]fun){
         for (int i = 0;i<fun.length;i++){
             Funcionario f = fun[i];
-            if (f != null && f.getTipo().equals("Comissionado")) {
+            if (f != null && (f.getTipoClasse()==TipodeFuncionario.COMISSIONADO)) {
                     mostra(f);
                 }
 
@@ -97,7 +97,7 @@ public class Main {
     private static void MostraFuncionarioAS (Funcionario[]fun){
         for (int i = 0;i<fun.length;i++){
             Funcionario f = fun[i];
-            if (f != null && f.getTipo().equals("Assalariado")) {
+            if (f != null && (f.getTipoClasse()==TipodeFuncionario.ASSALARIADO)) {
                 mostra(f);
             }
 
@@ -107,7 +107,7 @@ public class Main {
     private static void MostraFuncionarioHs (Funcionario[]fun){
         for (int i = 0;i<fun.length;i++){
             Funcionario f = fun[i];
-            if (f != null && f.getTipo().equals("Horista")) {
+            if (f != null && (f.getTipoClasse()==TipodeFuncionario.HORISTA)) {
                 mostra(f);
             }
 
@@ -117,7 +117,7 @@ public class Main {
     private static void MostraFuncionarioCBS (Funcionario[]fun){
         for (int i = 0;i<fun.length;i++){
             Funcionario f = fun[i];
-            if (f != null && f.getTipo().equals("Comissionado com Base Salario")) {
+            if (f != null && (f.getTipoClasse()==TipodeFuncionario.COMISSIONADOBASESALARIO)) {
                 mostra(f);
             }
 

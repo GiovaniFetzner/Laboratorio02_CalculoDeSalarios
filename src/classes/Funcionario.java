@@ -5,7 +5,15 @@ public abstract class Funcionario {
     public double rendimentos;
     public String tipo;
 
-    public TipodeFuncionario ff;
+    public TipodeFuncionario getTipoClasse() {
+        return tipoClasse;
+    }
+
+    public void setTipoClasse(TipodeFuncionario tipoClasse) {
+        this.tipoClasse = tipoClasse;
+    }
+
+    public TipodeFuncionario tipoClasse;
 
     public String getTipo() {
         return tipo;
@@ -37,11 +45,4 @@ public abstract class Funcionario {
         this.rendimentos = rendimentos;
     }
 
-    public TipodeFuncionario getFf() {
-        return ff;
-    }
-
-    public void setFf(TipodeFuncionario ff) {
-        this.ff = ff;
-    }
 }

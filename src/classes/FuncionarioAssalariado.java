@@ -8,6 +8,7 @@ public class FuncionarioAssalariado extends Funcionario{
         setCPF(CPF);
         setTipo(tipo);
         this.salarioSemanal = salarioSemanal;
+        setTipoClasse(TipodeFuncionario.ASSALARIADO);
     }
 
     public double getSalarioSemanal() {

@@ -11,6 +11,7 @@ public class FuncionarioHorista extends Funcionario{
         setTipo(tipo);
         this.salarioPorHora = salario;
         this.horasTrabalhadasNaSemana = horasTrabalhadas;
+        setTipoClasse(TipodeFuncionario.HORISTA);
     }
 
     @Override
